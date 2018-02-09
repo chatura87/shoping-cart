@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataserviceService} from "../../shared/services/dataservice.service";
+import { DataserviceService} from '../../shared/services/dataservice.service';
 
 @Component({
   selector: 'app-cake',

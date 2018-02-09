@@ -22,9 +22,9 @@ export class AppComponent {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      if (result.cake) {
+      if ( result && result.cake) {
         this.data.addCakeItem({'name': result.value});
-      }else if (result.toffee) {
+      }else if (result && result.toffee) {
         this.data.addToffeeItem({'name': result.value});
       }
     });

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {SuiModule} from 'ng2-semantic-ui';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatButtonModule, MatButtonToggleModule} from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule, MatInputModule} from '@angular/material';
 
@@ -28,7 +29,9 @@ import {DataserviceService} from './shared/services/dataservice.service';
     MatDialogModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule,
+    MatButtonToggleModule
   ],
   providers: [DataserviceService],
   entryComponents: [ SearchComponent ],
