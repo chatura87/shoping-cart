@@ -1,6 +1,5 @@
-import {Component, Inject, OnInit} from "@angular/core";
-import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material";
-import { DataserviceService} from "../../shared/services/dataservice.service";
+import {Component, Inject, OnInit} from '@angular/core';
+import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
 
 @Component({
   selector: 'app-search',
@@ -9,12 +8,10 @@ import { DataserviceService} from "../../shared/services/dataservice.service";
 })
 export class SearchComponent implements OnInit {
 
-  isCake: boolean;
   constructor(
     public dialogRef: MatDialogRef<SearchComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any, public dataService: DataserviceService) {
-    console.log(data);
-  }
+    @Inject(MAT_DIALOG_DATA) public data: any) {
+    }
 
   onNoClick(): void {
     this.dialogRef.close();
