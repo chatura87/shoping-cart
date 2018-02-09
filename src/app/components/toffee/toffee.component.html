@@ -1,0 +1,12 @@
+<sui-accordion-panel [isOpen]="true" *ngFor="let toffee of toffeeList">
+  <div title>
+    <i class="dropdown icon"></i>
+    {{toffee.name}}
+  </div>
+  <div content>
+    <form #myForm= "ngForm" (ngSubmit)= "onSubmit(myForm.value)">
+      <label for="ice">Icing</label> <input type="checkbox" id="ice" name="icing" ngModel checked>
+      <button type="submit">Done !</button>
+    </form>
+  </div>
+</sui-accordion-panel>

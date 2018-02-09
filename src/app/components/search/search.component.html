@@ -1,0 +1,17 @@
+<h1 mat-dialog-title></h1>
+<div class="ui segment">
+  <sui-checkbox [(ngModel)]="data.cake" >Cake</sui-checkbox>
+  <sui-checkbox [(ngModel)]="data.toffee" >Toffee</sui-checkbox>
+</div>
+<div mat-dialog-content>
+  <sui-search placeholder="Search..."
+              [hasIcon]=true
+              [(ngModel)]="data.value" ngDefaultControl></sui-search>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+</div>
+
+
+
